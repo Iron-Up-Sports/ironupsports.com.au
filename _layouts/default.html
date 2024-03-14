@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div class="logo-button">
+      <a href="index.html" title="Home"><img src="assets/lassio-logo-text-only.svg" alt="Lassio logo"></a>
+    </div>
+    {% include nav.html %}
+
+    <div class="rapper">
+      <div class="content">
+
+        {% if page.title != 'Home' %}
+          <h1>{{ page.title }}</h1>
+        {% endif %}
+
+        {{ content }}
+
+      </div>
+      <!-- /content -->
+
+      {% include footer.html %}
+
+    </div>
+    <!-- /rapper -->
+  </body>
+</html>
