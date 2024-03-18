@@ -494,11 +494,11 @@ footer {
   background: none;
 }
 .logo-button img {
-  max-height: 20px;
+  max-height: 22px;
 }
 @media (min-width: 1200px) {
   .logo-button img {
-    max-height: 80px;
+    max-height: 88px;
   }
 }
 
