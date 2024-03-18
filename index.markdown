@@ -85,3 +85,6 @@ title: Home
 </blockquote>
  </div>
   </div>
+
+
+  <h6>This should be size 32px</h6>

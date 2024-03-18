@@ -494,11 +494,11 @@ footer {
   background: none;
 }
 .logo-button img {
-  max-height: 22px;
+  max-height: 20px;
 }
 @media (min-width: 1200px) {
   .logo-button img {
-    max-height: 88px;
+    max-height: 80px;
   }
 }
 
@@ -863,6 +863,10 @@ tr:nth-child(even) {
 
 ul {
   margin-bottom: 32px;
+}
+
+h6 {
+  font-size: 32px;
 }
 
 /*# sourceMappingURL=main.css.map */

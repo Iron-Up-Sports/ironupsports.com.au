@@ -44,7 +44,7 @@ $footer-color: none;
 $timeline-line-color: #ffac86;
 $timeline-box-color: #f5f4f3;
 $timeline-dot-color: $lark-orange;
-$logo-size: 22px;
+$logo-size: 20px;
 
 // breakpoints
 @mixin for-phone-only {
@@ -950,4 +950,8 @@ tr:nth-child(even) {
 
 ul {
   margin-bottom: calc($spacer);
+}
+
+h6 {
+  font-size: $spacer;
 }
