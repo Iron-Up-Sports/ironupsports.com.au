@@ -11,7 +11,6 @@ title: Home
     <div class="column">
       <h1>Not getting the rugby league development at your club training?</h1>
       <p>We will develop your skills and athleticism for an exciting sporting season.</p>
-      
       <p><button type="button" name="button" class="button" style="margin-right: 6px; margin-bottom: 24px;" onclick="window.location.href='{{ site.baseurl }}/frontline';">Learn more</button> or <a href="{{ site.baseurl }}/contact">enquire now</a></p>
       </div>
       <div class="column background-img">
