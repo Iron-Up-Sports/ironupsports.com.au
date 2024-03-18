@@ -44,7 +44,7 @@ $footer-color: none;
 $timeline-line-color: #ffac86;
 $timeline-box-color: #f5f4f3;
 $timeline-dot-color: $lark-orange;
-$logo-size: 20px;
+$logo-size: calc($base-spacing * 2);
 
 // breakpoints
 @mixin for-phone-only {
@@ -469,7 +469,7 @@ footer {
 }
 
 .product-logo {
-  max-width: $base-spacing * 2;
+  max-width: calc($base-spacing * 2);
   margin-bottom: $base-spacing;
   margin-right: calc($base-spacing / 2); /* Add margin between the logo and other content */
 
@@ -565,17 +565,18 @@ footer {
 
   @include for-desktop-up {
     font-size: $base-font-size * 3;
-    margin-left: $base-spacing * 1.5;
+    margin-left: calc($base-spacing * 1.5);
   }
 
   a:hover{
     background: none;
   }
-//controls logo size
+/*controls logo size*/
   img {
     max-height: $logo-size;
+
     @include for-desktop-up {
-      max-height: calc($logo-size * 4);
+      max-height: calc($logo-size * 1);
     }
   }
 }

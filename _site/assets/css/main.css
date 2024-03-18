@@ -473,6 +473,7 @@ footer {
   font-size: 32px;
   margin-left: 32px;
   margin-top: 28px;
+  /*controls logo size*/
 }
 @media (max-width: 599px) {
   .logo-button {
@@ -494,11 +495,11 @@ footer {
   background: none;
 }
 .logo-button img {
-  max-height: 20px;
+  max-height: 64px;
 }
 @media (min-width: 1200px) {
   .logo-button img {
-    max-height: 80px;
+    max-height: 64px;
   }
 }
 
