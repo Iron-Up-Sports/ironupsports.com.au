@@ -22,6 +22,95 @@ title: Home
 
 <div class="row">
   <div class="content-wrapper">
+    <div class="columns">
+      <div class="column half">
+        <h2>Column 1</h2>
+        <p>Paragraph text.</p>
+      </div>
+      <div class="column half">
+        <h2>Column 2</h2>
+        <p>Paragraph text.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="content-wrapper">
+    <div class="columns">
+      <div class="column third">
+        <h2>Column 1</h2>
+        <p>Paragraph text.</p>
+      </div>
+      <div class="column third">
+        <h2>Column 2</h2>
+        <p>Paragraph text.</p>
+      </div>
+      <div class="column third">
+        <h2>Column 3</h2>
+        <p>Paragraph text.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+  <div class="content-wrapper">
+    <div class="columns">
+      <div class="column one-fourth">
+        <h2>Column 1</h2>
+        <p>Paragraph text.</p>
+      </div>
+      <div class="column one-fourth">
+        <h2>Column 2</h2>
+        <p>Paragraph text.</p>
+      </div>
+      <div class="column one-fourth background-img">
+        <h2>Column 3</h2>
+        <p>Paragraph text.</p>
+      </div>
+      <div class="column one-fourth">
+        <h2>Column 4</h2>
+        <p>Paragraph text.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="content-wrapper">
+    <div class="columns">
+      <div class="column one-fourth" style="background-color: orange">
+        <h2>Column 1/4</h2>
+        <p>Paragraph text.</p>
+      </div>
+      <div class="column three-fourths" style="background-color: yellow">
+        <h2>Column 3/4</h2>
+        <p>Paragraph text.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="content-wrapper">
+    <div class="columns">
+      <div class="column three-fourths">
+        <h2>Column 3/4</h2>
+        <p>Paragraph text.</p>
+      </div>
+      <div class="column one-fourth">
+        <h2>Column 1/4</h2>
+        <p>Paragraph text.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="content-wrapper">
   <div class="column">
    <h3>For the back office</h3>
     <p>Free your people up to do things that are uniquely human.</p>

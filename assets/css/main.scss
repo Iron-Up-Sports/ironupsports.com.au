@@ -15,6 +15,7 @@ $beekeeper: #f6e58d;
 
 // sizes
 $base-font-size: 16px;
+$base-spacing: calc($base-font-size * 1.5);
 
 // breakpoints
 @mixin for-phone-only {
@@ -92,4 +93,70 @@ body {
   @media screen and (min-width: 1200px) {
     width: 1140px; /* Adjust width for desktops and larger screens */
   }
+}
+
+/* Ensure columns expand evenly */
+.columns {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /*background-color: #badc58;*/
+}
+
+.column {
+  flex-grow: 1; /* Ensure columns expand evenly */
+  flex-basis: 0;
+  /* padding: calc($base-spacing / 2); Add padding to columns */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  margin-left: calc($base-spacing / 2); /* Add margin between columns */
+  margin-right: calc($base-spacing / 2);
+
+  &:first-child {
+    margin-left: 0; /* Remove margin from the first column */
+  }
+
+  &:last-child {
+    margin-right: 0; /* Remove margin from the last column */
+  }
+
+  &.background-img {
+    background-color: $beekeeper; /* Override background color if needed */
+    background-image: url('../images/Header/5.png');
+    background-size: cover; /* Adjust background size as needed */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
+  }
+}
+
+/* Define specific widths for different column classes */
+.half {
+  flex-basis: 50%;
+}
+
+.one-fourth {
+  flex-basis: 25%;
+}
+
+.third {
+  flex-basis: 33%;
+}
+
+.two-thirds {
+  flex-basis: 66%;
+}
+
+.three-fourths {
+  flex-basis: 75%;
+}
+
+.remove-padding {
+  padding: 0;
+}
+
+.add-padding {
+  padding: $base-spacing 0;
+}
+
+.row.hero {
+  margin-top: $base-spacing * 2;
 }

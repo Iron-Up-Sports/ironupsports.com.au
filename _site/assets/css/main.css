@@ -50,4 +50,67 @@ body {
   }
 }
 
+/* Ensure columns expand evenly */
+.columns {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /*background-color: #badc58;*/
+}
+
+.column {
+  flex-grow: 1; /* Ensure columns expand evenly */
+  flex-basis: 0;
+  /* padding: calc($base-spacing / 2); Add padding to columns */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  margin-left: 12px; /* Add margin between columns */
+  margin-right: 12px;
+}
+.column:first-child {
+  margin-left: 0; /* Remove margin from the first column */
+}
+.column:last-child {
+  margin-right: 0; /* Remove margin from the last column */
+}
+.column.background-img {
+  background-color: #f6e58d; /* Override background color if needed */
+  background-image: url("../images/Header/5.png");
+  background-size: cover; /* Adjust background size as needed */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  background-position: center; /* Center the background image */
+}
+
+/* Define specific widths for different column classes */
+.half {
+  flex-basis: 50%;
+}
+
+.one-fourth {
+  flex-basis: 25%;
+}
+
+.third {
+  flex-basis: 33%;
+}
+
+.two-thirds {
+  flex-basis: 66%;
+}
+
+.three-fourths {
+  flex-basis: 75%;
+}
+
+.remove-padding {
+  padding: 0;
+}
+
+.add-padding {
+  padding: 24px 0;
+}
+
+.row.hero {
+  margin-top: 48px;
+}
+
 /*# sourceMappingURL=main.css.map */
