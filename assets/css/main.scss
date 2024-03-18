@@ -10,7 +10,7 @@ $button-font: "Roboto", Helvetica, Arial, sans-serif;
 
 $base-font-size: 16px;
 
-$spaced-out: 32px;
+$base-spacing: 32px;
 
 // lassio-colours
 $lurple: #1924FF;
@@ -62,6 +62,7 @@ $logo-size: 20px;
 @mixin for-big-desktop-up {
   @media (min-width: 1800px) { @content; }
 }
+
 /* html elements */
 
 /*
@@ -141,10 +142,10 @@ body {
 .column {
   flex-grow: 1; /* Ensure columns expand evenly */
   flex-basis: 0;
-  /* padding: calc($spaced-out / 2); Add padding to columns */
+  /* padding: calc($base-spacing / 2); Add padding to columns */
   box-sizing: border-box; /* Ensure padding is included in the width */
-  margin-left: calc($spaced-out / 2); /* Add margin between columns */
-  margin-right: calc($spaced-out / 2);
+  margin-left: calc($base-spacing / 2); /* Add margin between columns */
+  margin-right: calc($base-spacing / 2);
 
   &:first-child {
     margin-left: 0; /* Remove margin from the first column */
@@ -200,11 +201,11 @@ body {
 }
 
 .add-padding {
-  padding: $spaced-out 0;
+  padding: $base-spacing 0;
 }
 
 .row.hero {
-  margin-top: $spaced-out * 2;
+  margin-top: $base-spacing * 2;
 }
 
 
@@ -223,11 +224,11 @@ body {
 // new cols using flex
 .col-4, .col-3 {
   flex: 1; // Allow columns to grow within the flex container
-  padding-right: $spaced-out;
+  padding-right: $base-spacing;
 
   @include for-phone-only {
     width: 100%; // For phones, take up the full width
-    margin-bottom: calc($spaced-out / 2);
+    margin-bottom: calc($base-spacing / 2);
   }
 
   @include for-tablet-portrait-up {
@@ -249,10 +250,10 @@ html.dark body {
 }
 
 h1, h2, h3, h4, p, ol, ul {
-  margin-bottom: calc($spaced-out / 2);
+  margin-bottom: calc($base-spacing / 2);
 
   @include for-desktop-up {
-    margin-bottom: calc($spaced-out / 2 * 1.5);
+    margin-bottom: calc($base-spacing / 2 * 1.5);
   }
 }
 h1, h2, h3, h4 {
@@ -266,7 +267,7 @@ h1, h2, h3, h4 {
 }
 h1 {
   font-size: $base-font-size * 2;
-  margin-bottom: calc($spaced-out / 2);
+  margin-bottom: calc($base-spacing / 2);
 
   @include for-desktop-up {
     font-size: $base-font-size * 3;
@@ -275,12 +276,12 @@ h1 {
 h2 {
   color: $iron-red;
   font-size: $base-font-size * 1.25;
-  margin-top: $spaced-out;
-  margin-bottom: calc($spaced-out / 2);
+  margin-top: $base-spacing;
+  margin-bottom: calc($base-spacing / 2);
 
   @include for-desktop-up {
     font-size: $base-font-size * 1.875;
-    margin-top: $spaced-out * 1.5;
+    margin-top: $base-spacing * 1.5;
   }
 }
 h3 {
@@ -312,14 +313,14 @@ img {
 ul, ol {
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: $spaced-out;
+  margin-left: $base-spacing;
   padding-top: 0;
   padding-bottom: 0;
 
 }
 blockquote {
-  margin-top: $spaced-out * 2;
-  padding: 0 $spaced-out;
+  margin-top: $base-spacing * 2;
+  padding: 0 $base-spacing;
   border-left: 8px solid $leal;
   font-style: italic;
 
@@ -332,12 +333,12 @@ blockquote {
 
 }
 nav {
-  margin-top: $spaced-out * 3;
-  padding-bottom: $spaced-out;
-  line-height: $spaced-out;
+  margin-top: $base-spacing * 3;
+  padding-bottom: $base-spacing;
+  line-height: $base-spacing;
 
   a {
-    margin-right: calc($spaced-out / 2);
+    margin-right: calc($base-spacing / 2);
     white-space: nowrap;
   }
 }
@@ -345,7 +346,7 @@ nav {
 form {
   max-width: 60%;
   margin-top: 30px;
-  margin-bottom: calc($spaced-out / 2);
+  margin-bottom: calc($base-spacing / 2);
 
   @include for-phone-only {
     max-width: 100%;
@@ -368,7 +369,7 @@ button {
   background-color: $link-color;
   border: none;
   color: white;
-  padding: $spaced-out * 0.5;
+  padding: $base-spacing * 0.5;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -399,7 +400,7 @@ ms-style.ms-style-override {
 input[type=text],
 input[type=email] {
 //  font-size: $base-font-size;
-  margin-bottom: calc($spaced-out / 2);
+  margin-bottom: calc($base-spacing / 2);
   padding: 5px;
   box-sizing: border-box;
 }
@@ -424,8 +425,8 @@ input[type=reset] {
     font-weight: 700;
     font-family: $button-font;
 
-     // Apply mixin for 'appearance' property
-     @include appearance(none);
+    // Apply mixin for 'appearance' property
+    @include appearance(none);
 
     @include for-phone-only {
       max-width: 100%;
@@ -439,9 +440,9 @@ input[type=button]:hover {
 footer {
   background-color: $footer-color;
   font-size: $base-font-size * 0.8;
-  padding-top: $spaced-out * 2;
-  padding-bottom: $spaced-out;
-  line-height: $spaced-out;
+  padding-top: $base-spacing * 2;
+  padding-bottom: $base-spacing;
+  line-height: $base-spacing;
   clear: both;
 
   @include for-desktop-up {
@@ -453,24 +454,24 @@ footer {
 .rapper {
   margin-left: auto;
   margin-right: auto;
-  margin-top: $spaced-out * 3;
+  margin-top: $base-spacing * 3;
   width: 100%;
-  padding-left: $spaced-out;
-  padding-right: $spaced-out;
+  padding-left: $base-spacing;
+  padding-right: $base-spacing;
   height: 100%;
   @extend %clearfix;
 
   @include for-tablet-landscape-up {
     max-width: 1080px;
-    padding-left: $spaced-out * 1.5;
-    padding-right: $spaced-out * 1.5;
+    padding-left: $base-spacing * 1.5;
+    padding-right: $base-spacing * 1.5;
   }
 }
 
 .product-logo {
-  max-width: $spaced-out * 2;
-  margin-bottom: $spaced-out;
-  margin-right: calc($spaced-out / 2); /* Add margin between the logo and other content */
+  max-width: $base-spacing * 2;
+  margin-bottom: $base-spacing;
+  margin-right: calc($base-spacing / 2); /* Add margin between the logo and other content */
 
   img {
     border-radius: 8px;
@@ -478,38 +479,38 @@ footer {
   }
 
   @include for-phone-only {
-    max-width: $spaced-out * 1.5;
-    margin-bottom: calc($spaced-out / 2);
+    max-width: $base-spacing * 1.5;
+    margin-bottom: calc($base-spacing / 2);
   }
 }
 
 
 .feature-icon {
-  margin-bottom: calc($spaced-out / 2);
-  margin-top: calc($spaced-out / 2);
+  margin-bottom: calc($base-spacing / 2);
+  margin-top: calc($base-spacing / 2);
 
   img {
     border-radius: 8px;
-    width: $spaced-out * 1.5
+    width: $base-spacing * 1.5
   }
 
   @include for-phone-only {
-    max-width: $spaced-out * 1.5;
+    max-width: $base-spacing * 1.5;
   }
 }
 
 .home-page > .feature-icon {
-  margin-top: calc($spaced-out / 4);
+  margin-top: calc($base-spacing / 4);
 }
 
 .bunch {
   float: left;
-  padding-right: calc($spaced-out / 2);
+  padding-right: calc($base-spacing / 2);
 }
 
 
 .first {
-  padding-right: $spaced-out;
+  padding-right: $base-spacing;
   background: yellow;
 }
 
@@ -521,17 +522,17 @@ footer {
 }
 
 .hero {
-  margin-bottom: $spaced-out * 2;
+  margin-bottom: $base-spacing * 2;
   //text-align: center;
 }
 
 .hero-img {
-  //margin-top: $spaced-out;
+  //margin-top: $base-spacing;
   width: 100%;
   float: left;
   width: 25%;
   margin: 0;
-  padding: $spaced-out * 0.5;
+  padding: $base-spacing * 0.5;
 
   @include for-phone-only {
     text-align: center;
@@ -551,20 +552,20 @@ footer {
 // logo
 .logo-button {
   font-size: $base-font-size * 2;
-  margin-left: $spaced-out;
-  margin-top: $spaced-out * .875;
+  margin-left: $base-spacing;
+  margin-top: $base-spacing * .875;
 
   @include for-phone-only {
-    margin-top: $spaced-out * 1.175;
+    margin-top: $base-spacing * 1.175;
   }
 
   @include for-tablet-landscape-up {
-      margin-left: $spaced-out;
+      margin-left: $base-spacing;
   }
 
   @include for-desktop-up {
     font-size: $base-font-size * 3;
-    margin-left: $spaced-out * 1.5;
+    margin-left: $base-spacing * 1.5;
   }
 
   a:hover{
@@ -584,7 +585,7 @@ footer {
 .highlight {background-color: rgba(246,229,141,0.5);}
 
 .blog-post {
-  margin-bottom: $spaced-out * 4;
+  margin-bottom: $base-spacing * 4;
 }
 
 .page-controls {
@@ -594,7 +595,7 @@ footer {
 }
 
 .prev-next-button:nth-child(2) {
-  margin-left: $spaced-out;
+  margin-left: $base-spacing;
 }
 
 .post-meta-data {
@@ -607,21 +608,21 @@ footer {
 }
 
 .emoji-list {
-  margin-bottom: $spaced-out;
+  margin-bottom: $base-spacing;
 
   ul {
     margin-left: 0;
   }
   li {
     list-style: none;
-    line-height: $spaced-out * 1.25;
+    line-height: $base-spacing * 1.25;
 
     @include for-desktop-up {
-      line-height: $spaced-out * 1.5 * 1.25;
+      line-height: $base-spacing * 1.5 * 1.25;
     }
   }
   i {
-    margin-right: calc($spaced-out / 4);
+    margin-right: calc($base-spacing / 4);
   }
 }
 
@@ -635,10 +636,10 @@ footer {
 
 .content {
   ul {
-    margin-bottom: calc($spaced-out / 2);
+    margin-bottom: calc($base-spacing / 2);
 
     @include for-desktop-up {
-      margin-bottom: $spaced-out;
+      margin-bottom: $base-spacing;
     }
   }
 }
@@ -814,8 +815,8 @@ body {
 
 #overlay-button {
   position: absolute;
-  right: $spaced-out;
-  top: $spaced-out;
+  right: $base-spacing;
+  top: $base-spacing;
   padding: 26px 11px;
   z-index: 5;
   cursor: pointer;
@@ -850,7 +851,7 @@ body {
     }
 
     @include for-desktop-up {
-      top: $spaced-out;
+      top: $base-spacing;
     }
 
 }
@@ -918,7 +919,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  margin-bottom: $spaced-out * 2
+  margin-bottom: $base-spacing * 2
   //border: 1px solid #ddd;
 }
 
@@ -929,7 +930,7 @@ th {
 
 th, td {
   text-align: center;
-  padding: calc($spaced-out / 2);
+  padding: calc($base-spacing / 2);
 }
 
 th:first-child, td:first-child {
@@ -949,9 +950,9 @@ tr:nth-child(even) {
 }
 
 ul {
-  margin-bottom: calc($spaced-out);
+  margin-bottom: calc($base-spacing);
 }
 
 h6 {
-  font-size: $spaced-out;
+  font-size: $base-spacing;
 }

@@ -75,7 +75,7 @@ body {
 .column {
   flex-grow: 1; /* Ensure columns expand evenly */
   flex-basis: 0;
-  /* padding: calc($spaced-out / 2); Add padding to columns */
+  /* padding: calc($base-spacing / 2); Add padding to columns */
   box-sizing: border-box; /* Ensure padding is included in the width */
   margin-left: 16px; /* Add margin between columns */
   margin-right: 16px;
