@@ -25,14 +25,14 @@ html, body {
 }
 
 body {
-  font-size: 8px;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 @media (min-width: 1200px) {
   body {
-    font-size: 12px;
+    font-size: 24px;
   }
 }
 
@@ -191,39 +191,39 @@ h1 a, h2 a, h3 a, h4 a {
 }
 
 h1 {
-  font-size: 16px;
+  font-size: 32px;
   margin-bottom: 16px;
 }
 @media (min-width: 1200px) {
   h1 {
-    font-size: 24px;
+    font-size: 48px;
   }
 }
 
 h2 {
   color: #cb1324;
-  font-size: 10px;
+  font-size: 20px;
   margin-top: 32px;
   margin-bottom: 16px;
 }
 @media (min-width: 1200px) {
   h2 {
-    font-size: 15px;
+    font-size: 30px;
     margin-top: 48px;
   }
 }
 
 h3 {
-  font-size: 9px;
+  font-size: 18px;
 }
 @media (min-width: 1200px) {
   h3 {
-    font-size: 12px;
+    font-size: 24px;
   }
 }
 
 h4 {
-  font-size: 8px;
+  font-size: 16px;
 }
 
 a {
@@ -288,11 +288,11 @@ form {
 input {
   width: 100%;
   color: #888;
-  font-size: 8px;
+  font-size: 16px;
 }
 @media (min-width: 1200px) {
   input {
-    font-size: 12px;
+    font-size: 24px;
   }
 }
 
@@ -329,7 +329,7 @@ button {
 
 ms-style.ms-style-override {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-size: 8px;
+  font-size: 16px;
 }
 
 input[type=text],
@@ -369,7 +369,7 @@ input[type=button]:hover {
 
 footer {
   background-color: none;
-  font-size: 6.4px;
+  font-size: 12.8px;
   padding-top: 64px;
   padding-bottom: 32px;
   line-height: 32px;
@@ -377,7 +377,7 @@ footer {
 }
 @media (min-width: 1200px) {
   footer {
-    font-size: 9.6px;
+    font-size: 19.2px;
   }
 }
 
@@ -470,7 +470,7 @@ footer {
   max-width: 100%;
 }
 .logo-button {
-  font-size: 16px;
+  font-size: 32px;
   margin-left: 32px;
   margin-top: 28px;
   /*controls logo size*/
@@ -487,7 +487,7 @@ footer {
 }
 @media (min-width: 1200px) {
   .logo-button {
-    font-size: 24px;
+    font-size: 48px;
     margin-left: 48px;
   }
 }
@@ -525,11 +525,11 @@ footer {
 
 .post-meta-data {
   color: #95afc0;
-  font-size: 6.4px;
+  font-size: 12.8px;
 }
 @media (min-width: 1200px) {
   .post-meta-data {
-    font-size: 9.6px;
+    font-size: 19.2px;
   }
 }
 
@@ -871,7 +871,7 @@ h6 {
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 32px;
 }
 
 /*# sourceMappingURL=main.css.map */
