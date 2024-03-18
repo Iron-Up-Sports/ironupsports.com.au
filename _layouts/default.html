@@ -3,25 +3,31 @@
   {% include head.html %}
   <body>
     <div class="logo-button">
-      <a href="index.html" title="Home"><img src="assets/lassio-logo-text-only.svg" alt="Lassio logo"></a>
+      <a href="index.html" title="Home"><img src="{{ site.baseurl }}/assets/images/iron-up-profile-logo.png" alt="Iron Up Sports logo"></a>
     </div>
     {% include nav.html %}
 
-    <div class="rapper">
-      <div class="content">
-
+    <div class="full-width-row">
+      <div class="content-wrapper">
         {% if page.title != 'Home' %}
           <h1>{{ page.title }}</h1>
         {% endif %}
+      </div>
+    </div>
+    
+    <div class="full-width-row">
+      <div class="content-wrapper">
+        <!-- Content for section 2 -->
+      </div>
+    </div>
+    
+    <!-- Add more sections as needed -->
 
         {{ content }}
 
-      </div>
       <!-- /content -->
 
       {% include footer.html %}
-
-    </div>
-    <!-- /rapper -->
+ 
   </body>
 </html>

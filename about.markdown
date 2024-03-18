@@ -1,55 +1,58 @@
 ---
 layout: default
-title: About Lassio
+title: About Iron Up Sports
 ---
 
-Lassio was founded by a small group of professionals who thought there had to be a better way to digitally transform organisations. At the heart of it we understand the profound changes that the future of work will bring.
 
-We started with some big goals.
- ​
-- How do we provide capabilities as a service that can scale?
-- How do we make it cost effective with a phenomenal ROI?
-- How can we empower business units while leveraging the existing IT infrastructure and services in a non-intrusive and non-disruptive way?
-- Could we become the largest sovereign wholesale outsourcer of digital tasks in Australia using state of the art technology and AI?
-- How can we remove tedious and repetitive tasks from those that have to work across multiple systems and data silos?
-- If we could improve this; how can we create efficiencies so that humans can focus on higher value tasks?
+<div class="row">
+  <div class="content-wrapper">
+    <div class="column">
+<h2>Backstory</h2>
 
-We approached the problem with no technical debt, no legacy baggage and no preconceptions. We used our extensive experience to develop practical managed service products that make it easy and repeatable to apply automation for any organisation&mdash;improving staff satisfaction and cost to serve.
- ​
-We feel like we've only just started and want to make sure that as we grow we remain true to our original vision.
+<p>I made my first rep team at 17 years old at an open trial. Selector was looking for a person to play full back and so I put my hand up for it. I knew nothing about full back but a memory of my favourite full back - Christian Cullen, an All Black goat who played full back. I just mimicked what I remember of his playing style. Support play, cover defence etc. When I trialled, I had no anxiety, nerves, no pressure on me but an excitement to play. I went through 3 rounds of open trial and eventually making the final squad for the Auckland Sea Lions u18s. This was my first time going through a proper preseason under performance specialists and skills coaches.</p>
 
-[Give us a call today]({{ site.baseurl }}/contact) and see what we can do for you.
+<p>The preseason boosted my confidence because of the newfound speed, fitness, strength and skills I attained. This new level of confidence got me into rep teams after rep teams and ending up moving to Australia to play rugby league at the Sharks, Cabramatta, Western Suburbs etc.</p>
 
-> "My weekly compliance reporting has jumped to new levels, with improved accuracy and ability to scale my reporting services to several departments, thanks to Lassio’s continual compliance automation services."
->
-> &mdash;Business Analyst, disability and aged care sector
+<p>I knew that proper training and preparation was the key to making new rep teams and so I carried this mentality with me to every team I trained for. I would do extras on my own at the local park. My son would jump in and train with me. So I trained and coached him also. My wife was a social media queen and would post me and my son training on Facebook and Instagram. A year of consistent training and posting on social media got people on her friend list requesting for my services. In 2015, I landed my first 2 athletes and my first service was preseason. Preseason was my first-ever program because of the impact it had on my life. 2 athletes became 10, 15 and Iron Up Sports was officially - a high-performance service for youth athletes. I studied and became a performance specialist coach and a skills coach for rugby league.</p>
 
-<div class="row-with-background">
-  <div class="column">
-    <h3>Column 1</h3>
-    <p>This is the content of column 1.</p>
-  </div>
-  <div class="column">
-    <h4>Column 2</h4>
-    <p>This is the content of column 2.</p>
-  </div>
-  <div class="column">
-    <h2>Column 3</h2>
-    <p>This is the content of column 3.</p>
-  </div>
-</div>
+<p>The name 'Iron Up Sports' derived from the proverb 27:17 - "As iron sharpens iron, so one man sharpens another." During my sporting journey, my wife's cousin was building a house in Sutherland Shire. I happened to move to a place in Padstow and we were 15 minutes drive away from them. They invited us over to train in their gym and have a meal afterwards. That training session lead to multiple sessions which eventually became our routine session in the afternoons. The guy was a Christian guy who was obsessed with mindset. He was my gym partner/mentor. He spoke about mindset with me for two years. Those two years had a major impact on my life. I went from doubt to belief, from pessimism to optimism and from hopelessness to being hopeful. He was my iron sharpens iron. So now I sharpen youth to make them better in sports and most importantly, in life.</p>
 
+<p>So that is how Iron Up Sports came about to be the service for youth athletes. To help them to be better rugby league players, better athletically and develop better human beings on and off the field.</p>
 
-<div class="row" style="background: red;">
-<h2>Our services</h2>
+<h2>Why we started</h2>
 
-  <div class="col-3">
-    <!-- Content for column 1 -->asd
-  </div>
-  <div class="col-3">
-    <!-- Content for column 2 -->fdsa
-  </div>
-  <div class="col-3">
-    <!-- Content for column 3 -->dfs
+<p>The reason</p>
+
+<p>The actual story/events</p>
+
+<p>When</p>
+
+<p>Example:</p>
+
+<p>Welcome to our website promoting rugby league coaching programs! We are passionate about providing high-quality coaching to players of all ages and skill levels.</p>
+
+<p>Our mission is to develop and nurture the next generation of rugby league players by providing comprehensive coaching programs that focus on skill development, athletic development and personal development.</p>
+
+<h2>What we have achieved</h2>
+
+<ul>
+  <li>Iron Up Sports have worked with over 10,000 athletes since 2015</li>
+  <li>Worked with over 30+ clubs around Australia to teach our Tackle Domination system.</li>
+  <li>We've helped over 100+ kids make it into development systems and progress in the systems to Harold Matthews, SG Ball, Jersey Flegg, reserve grade etc.</li>
+</ul>
+
+<h2>Coaching staff</h2>
+
+<p>Meet coach Henry Godinet - EXOS Performance specialist coach and rugby league skills coach.</p>
+
+<p>As I played football growing up, I knew where I struggled and how I improved those areas to become my areas of strength when coaching it to youth.</p>
+
+<p>Benjamin Collin - Level 2 rugby league coach. Assistant coach at the Sydney Roosters Jersey Flegg team. Experience in the Bulldogs development systems as a skills coach.</p>
+
+<p>Charlie Noo - Cert 3 & 4 in personal training, EXOS performance specialist</p>
+
+<p>Our coaching staff is composed of experienced and qualified individuals who are dedicated to helping players reach their full potential. They have extensive knowledge of the game and are committed to creating a positive and supportive learning environment.</p>
+
+   </div>
   </div>
 </div>

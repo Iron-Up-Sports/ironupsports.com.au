@@ -2,4 +2,4 @@ sass:
   style: compact # possible values: nested expanded compact compressed
   sass_dir: _sass # set _sass as the base directory
 
-baseurl: /ironup
+baseurl: 
