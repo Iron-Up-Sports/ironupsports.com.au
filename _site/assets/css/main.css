@@ -1,3 +1,25 @@
+/* html elements */
+* {
+  box-sizing: border-box;
+  color: #888;
+  margin: 0;
+  padding: 0;
+}
 
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 24px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

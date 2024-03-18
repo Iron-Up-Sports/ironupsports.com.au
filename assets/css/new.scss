@@ -65,15 +65,6 @@ $logo-size: calc($base-spacing * 2);
 
 /* html elements */
 
-/*
-For the block-level element that has elemnts inside it that are floated
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-*/
-
 * {
   box-sizing: border-box;
   color: $text-color;

@@ -3,3 +3,63 @@
 
 // variables
 @charset "utf-8";
+
+// fonts
+$body-font: "Roboto", Helvetica, Arial, sans-serif;
+$heading-font: "Roboto", Helvetica, Arial, sans-serif;
+$button-font: "Roboto", Helvetica, Arial, sans-serif;
+
+// colours
+$text-color: #888;
+
+// sizes
+$base-font-size: 16px;
+
+// breakpoints
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+
+/* html elements */
+
+* {
+  box-sizing: border-box;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+ font-size: $base-font-size;
+ display: flex;
+ flex-direction: column;
+ font-family: $body-font;
+ @include for-desktop-up {
+   font-size: $base-font-size * 1.5;
+ }
+}
