@@ -11,6 +11,7 @@ $button-font: "Roboto", Helvetica, Arial, sans-serif;
 
 // colours
 $text-color: #888;
+$beekeeper: #f6e58d;
 
 // sizes
 $base-font-size: 16px;
@@ -62,4 +63,33 @@ body {
  @include for-desktop-up {
    font-size: $base-font-size * 1.5;
  }
+}
+
+//layout
+
+.row {
+  display: flex;
+  width: 100%; /* Make the row fill the width of the window */
+  /*background-color: #222;*/
+
+  &.row-background {
+    background-color: $beekeeper; /* Override background color if needed */
+    background-image: url('../images/Header/5.png');
+    background-size: cover; /* Adjust background size as needed */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
+  }
+}
+
+.content-wrapper {
+  width: 90%; /* Default width for the content */
+  margin: 0 auto; /* Center the content horizontally */
+
+  @media screen and (min-width: 768px) {
+    width: 960px; /* Adjust width for tablets and larger screens */
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1140px; /* Adjust width for desktops and larger screens */
+  }
 }
