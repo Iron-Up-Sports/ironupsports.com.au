@@ -1,8 +1,8 @@
 ---
 ---
 
-// variables
-// start content
+// variables {
+// start content {
 @charset "utf-8";
 $body-font: "Roboto", Helvetica, Arial, sans-serif;
 $heading-font: "Roboto", Helvetica, Arial, sans-serif;
@@ -316,8 +316,6 @@ ul, ol {
   padding-top: 0;
   padding-bottom: 0;
 
-  li {
-  }
 }
 blockquote {
   margin-top: $spacer * 2;
@@ -397,7 +395,6 @@ ms-style.ms-style-override {
   font-family: $body-font;
   font-size: $base-font-size;
 }
-label{}
 
 input[type=text],
 input[type=email] {
@@ -405,6 +402,13 @@ input[type=email] {
   margin-bottom: calc($spacer / 2);
   padding: 5px;
   box-sizing: border-box;
+}
+
+// Define mixin for 'appearance' property
+@mixin appearance($value) {
+  -webkit-appearance: $value;
+  -moz-appearance: $value;
+  appearance: $value;
 }
 
 input[type=button],
@@ -417,9 +421,11 @@ input[type=reset] {
     text-decoration: none;
     cursor: pointer;
     width: 100%;
-    -webkit-appearance: none;
     font-weight: 700;
     font-family: $button-font;
+
+     // Apply mixin for 'appearance' property
+     @include appearance(none);
 
     @include for-phone-only {
       max-width: 100%;
@@ -617,10 +623,6 @@ footer {
   i {
     margin-right: calc($spacer / 4);
   }
-}
-
-.post-date {
-
 }
 
 .profile-pic {
