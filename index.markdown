@@ -259,8 +259,6 @@ title: Home
   </div>
   </div>
 
-
-
 <div class="row">
   <div class="content-wrapper">
 <blockquote>

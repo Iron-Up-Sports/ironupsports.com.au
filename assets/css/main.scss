@@ -159,7 +159,7 @@ img {
   flex: 0 0 100%; /* By default, columns take up full width */
 }
 
-@media screen and (min-width: 768px) {
+@include for-tablet-portrait-up {
   .half {
     flex: 0 0 calc(50% - 20px); /* Half-width columns on larger screens */
   }
@@ -173,8 +173,6 @@ img {
     align-items: center;
   }
 }
-
-
 
 // Styles for each grid item column
 .grid-item-2 {
@@ -237,8 +235,8 @@ img {
 }
 
 /* Media queries for larger screens */
-@media screen and (min-width: 768px) {
-  /* Columns with a width of 33% */
+@include for-tablet-portrait-up {
+    /* Columns with a width of 33% */
   .third {
     flex: 0 0 calc(33% - 20px); /* 33% width */
     margin-bottom: 0; /* Remove bottom margin for columns on larger screens */
