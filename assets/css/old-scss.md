@@ -952,3 +952,248 @@ h6 {
 h5 {
   font-size: $base-font-size * 2;
 }
+
+
+
+// works?
+
+// variables
+
+// colours
+$almost-black: #222222;
+$beekeeper: #f6e58d;
+$grey-4: #888888;
+$iron-red: #cb1324;
+
+// fonts
+$body-font: "Roboto", Helvetica, Arial, sans-serif;
+$heading-font: "Roboto", Helvetica, Arial, sans-serif;
+$button-font: "Roboto", Helvetica, Arial, sans-serif;
+$heading-color: $almost-black;
+$text-color: $grey-4;
+$link-color: $iron-red;
+
+// sizes and spacing
+$base-font-size: 16px;
+$base-spacing: calc($base-font-size * 1.5);
+$line-height-ratio: 1.5; // Adjust this ratio as needed
+
+// breakpoints
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+
+/* html elements */
+
+* {
+  box-sizing: border-box;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+ font-size: $base-font-size;
+ display: flex;
+ flex-direction: column;
+ font-family: $body-font;
+ @include for-desktop-up {
+   font-size: $base-font-size * 1.5;
+ }
+}
+
+//layout
+
+.row {
+  /*display: flex;*/
+  width: 100%; /* Make the row fill the width of the window */
+
+  &.row-background {
+    background-color: $beekeeper; /* Override background color if needed */
+    background-image: url('../images/Header/5.png');
+    background-size: cover; /* Adjust background size as needed */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
+  }
+}
+
+.content-wrapper {
+  width: 90%; /* Default width for the content */
+  margin: 0 auto; /* Center the content horizontally */
+
+  @media screen and (min-width: 768px) {
+    width: 960px; /* Adjust width for tablets and larger screens */
+    background-color: aqua;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1140px; /* Adjust width for desktops and larger screens */
+  }
+}
+
+/* Ensure columns expand evenly */
+.columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  flex-basis: 100%;
+  /* padding: calc($base-spacing / 2); Add padding to columns */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  margin: 0 $base-spacing;
+
+  &:first-child {
+    margin-left: 0; /* Remove margin from the first column */
+  }
+
+  &:last-child {
+    margin-right: 0; /* Remove margin from the last column */
+  }
+
+  &.background-img {
+    background-color: $beekeeper; /* Override background color if needed */
+    background-image: url('../images/Header/5.png');
+    background-size: cover; /* Adjust background size as needed */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
+  }
+}
+
+@media screen and (min-width: 768px) {
+ 
+}
+
+
+/* Define specific widths for different column classes */
+/*.half {
+  flex-basis: 50%;
+}
+
+.one-fourth {
+  flex-basis: 25%;
+}
+
+.third {
+  flex-basis: 33%;
+}
+
+.two-thirds {
+  flex-basis: 66%;
+}
+
+.three-fourths {
+  flex-basis: 75%;
+}*/
+
+
+.remove-padding {
+  padding: 0;
+}
+
+.add-padding {
+  padding: $base-spacing 0;
+}
+
+.row.hero {
+  margin-top: $base-spacing * 2;
+}
+
+.icon-left {
+  display: flex;  /*Use flexbox to align items */
+}
+
+.icon {
+  flex-shrink: 0; /* Prevent the icon from shrinking */
+  margin-right: calc($base-spacing / 2); /* Adjust margin between icon and content */
+}
+
+.content {
+  flex-grow: 1; /* Allow content to grow to fill remaining space */
+}
+
+// typography
+h1, h2, h3, h4, p, ol, ul {
+  margin-bottom: calc($base-spacing / 2);
+
+  @include for-desktop-up {
+    margin-bottom: calc($base-spacing / 2 * 1.5);
+  }
+}
+h1, h2, h3, h4 {
+  font-family: $heading-font;
+  color: $heading-color;
+  letter-spacing: -1px;
+  line-height: 100%;
+  font-weight: 500;
+
+  a {font-family: $heading-font !important}
+}
+h1 {
+  font-size: $base-font-size * 2;
+  line-height: 1.2;
+  margin-bottom: calc($base-spacing / 2);
+
+  @include for-desktop-up {
+    font-size: $base-font-size * 3;
+  }
+}
+h2 {
+  color: $iron-red;
+  font-size: $base-font-size * 1.25;
+  line-height: 1.4;
+  margin-bottom: calc($base-spacing / 2);
+
+  @include for-desktop-up {
+    font-size: $base-font-size * 1.875;
+  }
+}
+h3 {
+  font-size: $base-font-size * 1.125;
+
+  @include for-desktop-up {
+    font-size: $base-font-size * 1.5;
+  }
+}
+h4 {
+  font-size: $base-font-size;
+}
+
+a {
+  color: $link-color;
+  font-weight: 500;
+  text-decoration: underline;
+}
+a:hover {
+  color: #ffffff;
+  background: $link-color;
+  text-decoration: none;
+
+}
