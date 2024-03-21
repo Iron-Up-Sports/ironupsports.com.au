@@ -4,7 +4,7 @@ title: Home
 ---
 
 
-<div class="row hero">
+<div class="row">
   <div class="content-wrapper">
     <div class="columns">
       <div class="column half">
@@ -17,8 +17,6 @@ title: Home
       </div>
   </div>
 </div>
-
-<!--
 
 <div class="row">
   <div class="content-wrapper">
@@ -34,7 +32,6 @@ title: Home
     </div>
   </div>
 </div>
--->
 
 
 <div class="row">
