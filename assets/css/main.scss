@@ -20,7 +20,7 @@ $link-color: $iron-red;
 
 // sizes and spacing
 $base-font-size: 16px;
-$base-spacing: calc($base-font-size * 1.5);
+$base-spacing: 24px;
 $line-height-ratio: 1.5; // Adjust this ratio as needed
 
 // breakpoints
@@ -91,6 +91,7 @@ img {
 
 .row {
   width: 100%;
+  margin-bottom: calc(#{$base-spacing} / 2);
 
   &.row-background {
     background-color: $beekeeper; /* Override background color if needed */
@@ -210,29 +211,16 @@ img {
   }
 }
 
-/* Default width for .third */
-.third {
+/* Default width for columns */
+.third,
+.one-fourth,
+.three-fourths,
+.two-thirds,
+.one-third {
   flex: 0 0 100%; /* By default, columns take up full width */
   margin-bottom: 20px; /* Add spacing between columns */
 }
 
-/* Default width for .one-fourth and .three-fourths */
-.one-fourth, .three-fourths {
-  flex: 0 0 100%; /* By default, columns take up full width */
-  margin-bottom: 20px; /* Add spacing between columns */
-}
-
-/* Default width for .two-thirds and .one-third */
-.two-thirds, .one-third {
-  flex: 0 0 100%; /* By default, columns take up full width */
-  margin-bottom: 20px; /* Add spacing between columns */
-}
-
-/* Default width for .one-fourth */
-.one-fourth {
-  flex: 0 0 100%; /* By default, columns take up full width */
-  margin-bottom: 20px; /* Add spacing between columns */
-}
 
 /* Media queries for larger screens */
 @include for-tablet-portrait-up {
@@ -330,116 +318,62 @@ a:hover {
 
 }
 
-/* full-screen overlay nav */
+h5, h6 {
+  font-size: $base-spacing;
+}
 
-body {
-  //  margin: 0;
-  //  width: 100vw;
-  //  height: 100vh;
-    animation: bugfix infinite 1s;
-    -webkit-animation: bugfix infinite 1s;
-  }
-  
-  @keyframes bugfix { from {padding:0;} to {padding:0;}}
-  @-webkit-keyframes bugfix { from {padding:0;} to {padding:0;}}
-  
-  #overlay-button {
-    position: absolute;
-    right: $base-spacing;
-    top: $base-spacing;
-    padding: 26px 11px;
-    z-index: 5;
-    cursor: pointer;
-    user-select: none;
-    span {
-        height: 4px;
-        width: 35px;
-        border-radius: 2px;
-        background-color: $link-color;
-        position: relative;
-        display: block;
-        transition: all .2s ease-in-out;
-        &:before {
-          top: -10px;
-          visibility: visible;
-        }
-        &:after {
-          top: 10px;
-        }
-        &:before, &:after {
-            height: 4px;
-            width: 35px;
-            border-radius: 2px;
-            background-color: $link-color;
-            position: absolute;
-            content: "";
-            transition: all .2s ease-in-out;
-        }
-      }
-      &:hover span, &:hover span:before, &:hover span:after {
-        background: $link-color; // colour of X
-      }
-  
-      @include for-desktop-up {
-        top: $base-spacing;
-      }
-  
-  }
-  
-  input[type=checkbox] {
-    display: none;
-  }
-  
-  input[type=checkbox]:checked ~ #overlay {
-    visibility: visible;
-  }
-  
-  input[type=checkbox]:checked ~ #overlay-button {
-    &:hover span, span{
-      background: transparent;
-    }
-    span {
-      &:before {
-        transform: rotate(45deg) translate(7px, 7px);
-        opacity: 1;
-      }
-      &:after {
-        transform: rotate(-45deg) translate(7px, -7px);
-      }
-    }
-  }
-  
-  #overlay {
-    height: 100vh;
-    width: 100vw;
-    background: #fff;
-    z-index: 2;
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    &.active {
-      visibility: visible;
-    }
-    ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-align: left;
-      height: 100vh;
-      padding-left: 0;
-      list-style-type: none;
-      li {
-        padding: 1em;
-      /*  a {
-          color: white;
-          text-decoration: none;
-          font-size: 1.5em;
-            &:hover {
-            color: #333332;
-          }
-        }*/
-      }
-    }
-  }
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: calc(#{$base-spacing} / 2) 0;
+}
+
+.logo img {
+  height: 40px; /* Adjust as needed */
+}
+
+.menu {
+  margin-left: auto; /* Align menu items to the right */
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.menu ul li:last-child {
+  margin-right: 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+}
+
+.buttons {
+  margin-left: $base-spacing * 2; /* Add space between menu items and buttons */
+}
+
+.buttons button {
+  padding: 8px 16px;
+  background-color: #ff8800;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.buttons button:last-child {
+  margin-left: calc(#{$base-spacing} / 2); /* Remove margin-right from the last button */
+}
+
+.buttons button:hover {
+  background-color: #cc6600;
+}

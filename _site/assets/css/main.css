@@ -9,7 +9,7 @@ body { font-size: 16px; display: flex; flex-direction: column; font-family: "Rob
 
 img { max-width: 100%; }
 
-.row { width: 100%; }
+.row { width: 100%; margin-bottom: calc(24px / 2); }
 .row.row-background { background-color: #f6e58d; /* Override background color if needed */ background-image: url("../images/Header/5.png"); background-size: cover; /* Adjust background size as needed */ background-repeat: no-repeat; /* Prevent background image from repeating */ background-position: center; /* Center the background image */ }
 
 .content-wrapper { width: 90%; /* Default width for the content */ margin: 0 auto; /* Center the content horizontally */ padding: calc($base-spacing / 2); }
@@ -36,21 +36,12 @@ img { max-width: 100%; }
 
 .grid-item-1 { width: calc(100% - 10px); /* Each item takes up 100% width */ box-sizing: border-box; display: flex; flex-direction: column; padding-bottom: calc($base-spacing / 2); }
 .grid-item-1 .icon { flex: 0 0 auto; margin-right: calc($base-spacing / 2); }
-@media (min-width: 900px) { .grid-item-1 .icon { margin-right: calc($base-font-size * 1.5); } }
+@media (min-width: 900px) { .grid-item-1 .icon { margin-right: 24px; } }
 .grid-item-1 .content { flex: 1; }
 @media (max-width: 599px) { .grid-item-1 { width: calc(100% - 20px); /* Each item takes up full width on narrow screens */ } }
 
-/* Default width for .third */
-.third { flex: 0 0 100%; /* By default, columns take up full width */ margin-bottom: 20px; /* Add spacing between columns */ }
-
-/* Default width for .one-fourth and .three-fourths */
-.one-fourth, .three-fourths { flex: 0 0 100%; /* By default, columns take up full width */ margin-bottom: 20px; /* Add spacing between columns */ }
-
-/* Default width for .two-thirds and .one-third */
-.two-thirds, .one-third { flex: 0 0 100%; /* By default, columns take up full width */ margin-bottom: 20px; /* Add spacing between columns */ }
-
-/* Default width for .one-fourth */
-.one-fourth { flex: 0 0 100%; /* By default, columns take up full width */ margin-bottom: 20px; /* Add spacing between columns */ }
+/* Default width for columns */
+.third, .one-fourth, .three-fourths, .two-thirds, .one-third { flex: 0 0 100%; /* By default, columns take up full width */ margin-bottom: 20px; /* Add spacing between columns */ }
 
 /* Media queries for larger screens */
 @media (min-width: 600px) { /* Columns with a width of 33% */
@@ -84,30 +75,27 @@ a { color: #cb1324; font-weight: 500; text-decoration: underline; }
 
 a:hover { color: #ffffff; background: #cb1324; text-decoration: none; }
 
-/* full-screen overlay nav */
-body { animation: bugfix infinite 1s; -webkit-animation: bugfix infinite 1s; }
+h5, h6 { font-size: 24px; }
 
-@keyframes bugfix { from { padding: 0; }
-  to { padding: 0; } }
-@-webkit-keyframes bugfix { from { padding: 0; }
-  to { padding: 0; } }
-#overlay-button { position: absolute; right: calc($base-font-size * 1.5); top: calc($base-font-size * 1.5); padding: 26px 11px; z-index: 5; cursor: pointer; user-select: none; }
-#overlay-button span { height: 4px; width: 35px; border-radius: 2px; background-color: #cb1324; position: relative; display: block; transition: all .2s ease-in-out; }
-#overlay-button span:before { top: -10px; visibility: visible; }
-#overlay-button span:after { top: 10px; }
-#overlay-button span:before, #overlay-button span:after { height: 4px; width: 35px; border-radius: 2px; background-color: #cb1324; position: absolute; content: ""; transition: all .2s ease-in-out; }
-#overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after { background: #cb1324; }
-@media (min-width: 1200px) { #overlay-button { top: calc($base-font-size * 1.5); } }
+/* navbar */
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: calc(24px / 2) 0; }
 
-input[type=checkbox] { display: none; }
+.logo img { height: 40px; /* Adjust as needed */ }
 
-input[type=checkbox]:checked ~ #overlay { visibility: visible; }
+.menu { margin-left: auto; /* Align menu items to the right */ }
 
-input[type=checkbox]:checked ~ #overlay-button:hover span, input[type=checkbox]:checked ~ #overlay-button span { background: transparent; }
-input[type=checkbox]:checked ~ #overlay-button span:before { transform: rotate(45deg) translate(7px, 7px); opacity: 1; }
-input[type=checkbox]:checked ~ #overlay-button span:after { transform: rotate(-45deg) translate(7px, -7px); }
+.menu ul { list-style-type: none; margin: 0; padding: 0; }
 
-#overlay { height: 100vh; width: 100vw; background: #fff; z-index: 2; visibility: hidden; position: fixed; top: 0; left: 0; }
-#overlay.active { visibility: visible; }
-#overlay ul { display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: left; height: 100vh; padding-left: 0; list-style-type: none; }
-#overlay ul li { padding: 1em; /*  a { color: white; text-decoration: none; font-size: 1.5em; &:hover { color: #333332; } }*/ }
+.menu ul li { display: inline-block; margin-right: 20px; /* Adjust as needed */ }
+
+.menu ul li:last-child { margin-right: 0; }
+
+.menu ul li a { text-decoration: none; }
+
+.buttons { margin-left: 48px; /* Add space between menu items and buttons */ }
+
+.buttons button { padding: 8px 16px; background-color: #ff8800; border: none; color: #fff; cursor: pointer; }
+
+.buttons button:last-child { margin-left: calc(24px / 2); /* Remove margin-right from the last button */ }
+
+.buttons button:hover { background-color: #cc6600; }
