@@ -11,7 +11,7 @@ img { max-width: 100%; }
 .row { width: 100%; }
 .row.row-background { background-color: #f6e58d; /* Override background color if needed */ background-image: url("../images/Header/5.png"); background-size: cover; /* Adjust background size as needed */ background-repeat: no-repeat; /* Prevent background image from repeating */ background-position: center; /* Center the background image */ }
 
-.content-wrapper { width: 90%; /* Default width for the content */ margin: 0 auto; /* Center the content horizontally */ padding: 12px 0; /* top and bottom padding */ max-width: 1080px; }
+.content-wrapper { width: 90%; /* Default width for the content */ margin: 0 auto; /* Center the content horizontally */ padding: 12px 0; /* top and bottom padding */ max-width: 1080px; background-color: #f5f5f5; }
 
 .columns { display: flex; flex-wrap: wrap; /* Ensure columns wrap to next row on smaller screens */ justify-content: space-between; /* Elements spaced evenly */ }
 
