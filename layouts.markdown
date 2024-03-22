@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Layouts
 ---
 
 <!--
@@ -22,64 +22,71 @@ title: Home
   <div class="content-wrapper">
     <div class="columns">
       <div class="column half">
-      <h1>half-col-1</h1>
+      <h2>half-col-1</h2>
+        <p>Thanks to our teams using Lassio Rhythm and the notifications built in&mdash;we were able to pickup on and prevent several frontline workers from attending some work sites. It’s these types of pro-active services that will help our Compliance teams better deal with Covid cases and the uncertain environment we currently live in.</p>
+        <p>We will develop your skills and athleticism for an exciting sporting season.</p>
+        <p>We will develop your skills and athleticism for an exciting sporting season.</p>
+        <p>We will develop your skills and athleticism for an exciting sporting season.</p>
+      <h3>Heading 3</h3>
+              <p>We will <a href="#">develop</a> your skills and athleticism for an exciting sporting season.</p>
+              <p>Thanks to our teams using Lassio Rhythm and the notifications built in&mdash;we were able to pickup on and prevent several frontline workers from attending some work sites. It’s these types of pro-active services that will help our Compliance teams better deal with Covid cases and the uncertain environment we currently live in.</p>
         <p>We will develop your skills and athleticism for an exciting sporting season.</p>
       </div>
         <div class="column half">
-        <h1>half-col-2</h1>
+        <h2>half-col-2</h2>
         <p>We will develop your skills and athleticism for an exciting sporting season.</p>
       </div>
     </div>
     <div class="columns">
       <div class="column one-fourth">
-      <h1>fourth-col-1</h1>
+      <h2>fourth-col-1</h2>
         <p>We will develop your skills and athleticism for an exciting sporting season.</p>
       </div>
       <div class="column one-fourth">
-      <h1>fourth-col-1</h1>
+      <h2>fourth-col-1</h2>
         <p>We will develop your skills and athleticism for an exciting sporting season.</p>
       </div>
       <div class="column one-fourth">
-      <h1>fourth-col-1</h1>
+      <h2>fourth-col-1</h2>
         <p>We will develop your skills and athleticism for an exciting sporting season.</p>
       </div>
       <div class="column one-fourth">
-      <h1>fourth-col-1</h1>
+      <h2>fourth-col-1</h2>
         <p>We will develop your skills and athleticism for an exciting sporting season.</p>
       </div>
     </div>
     <div class="columns">
       <div class="column one-fourth">
-      <h1>third-col-1</h1>
+      <h2>third-col-1</h2>
         <p>We will develop your skills and athleticism for an exciting sporting season.</p>
       </div>
         <div class="column three-fourths">
-        <h1>third-col-2</h1>
+        <h2>third-col-2</h2>
         <p>We will develop your skills and athleticism for an exciting sporting season.</p>
       </div>
     </div>
     <div class="columns">
       <div class="column third">
-      <h1>third-col-1</h1>
+      <h2>third-col-1</h2>
         <p>We will develop your skills and athleticism for an exciting sporting season.</p>
       </div>
         <div class="column third">
-        <h1>third-col-2</h1>
+        <h2>third-col-2</h2>
         <p>We will develop your skills and athleticism for an exciting sporting season.</p>
       </div>
       <div class="column third">
-        <h1>third-col-3</h1>
+        <h2>third-col-3</h2>
         <p>We will develop your skills and athleticism for an exciting sporting season.</p>
       </div>
     </div>
      
     <div class="columns">
       <div class="column two-thirds">
-      <h1>third-col-1</h1>
+      <h2>third-col-1</h2>
         <p>We will develop your skills and athleticism for an exciting sporting season.</p>
       </div>
         <div class="column one-third">
-        <h1>third-col-2</h1>
+        <h2>third-col-2</h2>
         <p>We will develop your skills and athleticism for an exciting sporting season.</p>
       </div>
     </div>
