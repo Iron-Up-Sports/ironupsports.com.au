@@ -16,20 +16,74 @@ title: Home
         </div>
       </div>
   </div>
-</div>
+</div>-->
 
 <div class="row">
   <div class="content-wrapper">
     <div class="columns">
       <div class="column half">
-      <h1>Not getting the rugby league development at your club training?</h1>
+      <h1>half-col-1</h1>
         <p>We will develop your skills and athleticism for an exciting sporting season.</p>
       </div>
         <div class="column half">
-        <h1>Not getting the rugby league development at your club training?</h1>
+        <h1>half-col-2</h1>
         <p>We will develop your skills and athleticism for an exciting sporting season.</p>
       </div>
     </div>
+    <div class="columns">
+      <div class="column one-fourth">
+      <h1>fourth-col-1</h1>
+        <p>We will develop your skills and athleticism for an exciting sporting season.</p>
+      </div>
+      <div class="column one-fourth">
+      <h1>fourth-col-1</h1>
+        <p>We will develop your skills and athleticism for an exciting sporting season.</p>
+      </div>
+      <div class="column one-fourth">
+      <h1>fourth-col-1</h1>
+        <p>We will develop your skills and athleticism for an exciting sporting season.</p>
+      </div>
+      <div class="column one-fourth">
+      <h1>fourth-col-1</h1>
+        <p>We will develop your skills and athleticism for an exciting sporting season.</p>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column one-fourth">
+      <h1>third-col-1</h1>
+        <p>We will develop your skills and athleticism for an exciting sporting season.</p>
+      </div>
+        <div class="column three-fourths">
+        <h1>third-col-2</h1>
+        <p>We will develop your skills and athleticism for an exciting sporting season.</p>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column third">
+      <h1>third-col-1</h1>
+        <p>We will develop your skills and athleticism for an exciting sporting season.</p>
+      </div>
+        <div class="column third">
+        <h1>third-col-2</h1>
+        <p>We will develop your skills and athleticism for an exciting sporting season.</p>
+      </div>
+      <div class="column third">
+        <h1>third-col-3</h1>
+        <p>We will develop your skills and athleticism for an exciting sporting season.</p>
+      </div>
+    </div>
+     
+    <div class="columns">
+      <div class="column two-thirds">
+      <h1>third-col-1</h1>
+        <p>We will develop your skills and athleticism for an exciting sporting season.</p>
+      </div>
+        <div class="column one-third">
+        <h1>third-col-2</h1>
+        <p>We will develop your skills and athleticism for an exciting sporting season.</p>
+      </div>
+    </div>
+    
   </div>
 </div>
 
@@ -44,4 +98,3 @@ title: Home
     <h6>This should be size 32px</h6>
   </div>
 </div>
--->
